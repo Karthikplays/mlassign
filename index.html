@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security in Blockchain - Presentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="presentation-container">
+        <!-- Slide Counter -->
+        <div class="slide-counter">
+            <span id="current-slide">1</span> / <span id="total-slides">10</span>
+        </div>
+
+        <!-- Slide 1: Title -->
+        <div class="slide active" data-slide="1">
+            <div class="slide-content title-slide">
+                <h1 class="main-title">Security in Blockchain</h1>
+                <h2 class="subtitle">Introduction • Bitcoin Security Aspects • Privacy Protection</h2>
+                <div class="title-content">
+                    <p class="description">A comprehensive overview for college students</p>
+                    <p class="description">Understanding the fundamentals of secure distributed systems</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Introduction -->
+        <div class="slide" data-slide="2">
+            <div class="slide-content">
+                <h1 class="slide-title">Introduction to Blockchain Security</h1>
+                <ul class="content-list">
+                    <li class="bullet-point">Comprehensive risk management system protecting blockchain networks</li>
+                    <li class="bullet-point">Uses cybersecurity frameworks and cryptographic techniques</li>
+                    <li class="bullet-point">Ensures integrity, confidentiality, and availability of data</li>
+                    <li class="bullet-point">Critical for maintaining trust in decentralized systems</li>
+                    <li class="bullet-point">Protects against fraud, cyberattacks, and malicious activities</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 3: Core Security Features -->
+        <div class="slide" data-slide="3">
+            <div class="slide-content">
+                <h1 class="slide-title">Core Security Features</h1>
+                <ul class="content-list">
+                    <li class="bullet-point"><strong>Decentralization:</strong> No single point of failure, distributed across network nodes</li>
+                    <li class="bullet-point"><strong>Cryptography:</strong> Hash functions, digital signatures, public-key cryptography</li>
+                    <li class="bullet-point"><strong>Consensus Mechanisms:</strong> Proof of Work, Proof of Stake validation</li>
+                    <li class="bullet-point"><strong>Immutability:</strong> Cryptographically linked blocks prevent tampering</li>
+                    <li class="bullet-point"><strong>Transparency:</strong> Public ledger allows verification and auditing</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 4: Bitcoin Security -->
+        <div class="slide" data-slide="4">
+            <div class="slide-content">
+                <h1 class="slide-title">Bitcoin Security Mechanisms</h1>
+                <ul class="content-list">
+                    <li class="bullet-point"><strong>Proof of Work (PoW):</strong> Miners solve complex mathematical puzzles</li>
+                    <li class="bullet-point"><strong>Network Hash Rate:</strong> 670 exa hashes per second (as of 2024)</li>
+                    <li class="bullet-point"><strong>Economic Incentives:</strong> Block rewards encourage honest participation</li>
+                    <li class="bullet-point"><strong>51% Attack Resistance:</strong> Requires controlling majority of network power</li>
+                    <li class="bullet-point"><strong>Cryptographic Protection:</strong> SHA-256 hashing and digital signatures</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 5: Cryptographic Foundations -->
+        <div class="slide" data-slide="5">
+            <div class="slide-content">
+                <h1 class="slide-title">Cryptographic Foundations</h1>
+                <ul class="content-list">
+                    <li class="bullet-point"><strong>SHA-256 Hash Function:</strong> Creates unique 256-bit fingerprints</li>
+                    <li class="bullet-point"><strong>Elliptic Curve Cryptography (ECC):</strong> Generates public-private key pairs</li>
+                    <li class="bullet-point"><strong>Digital Signatures:</strong> Prove ownership and authorize transactions</li>
+                    <li class="bullet-point"><strong>Merkle Trees:</strong> Efficient verification of transaction integrity</li>
+                    <li class="bullet-point"><strong>One-way Functions:</strong> Computationally impossible to reverse</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 6: Consensus Algorithms -->
+        <div class="slide" data-slide="6">
+            <div class="slide-content">
+                <h1 class="slide-title">Consensus Algorithms & Proof of Work</h1>
+                <ul class="content-list">
+                    <li class="bullet-point"><strong>Mining Process:</strong> Miners compete to solve cryptographic puzzles</li>
+                    <li class="bullet-point"><strong>Block Validation:</strong> Network participants verify proposed blocks</li>
+                    <li class="bullet-point"><strong>Difficulty Adjustment:</strong> Maintains ~10 minute block times</li>
+                    <li class="bullet-point"><strong>Fork Resolution:</strong> Longest valid chain becomes accepted version</li>
+                    <li class="bullet-point"><strong>Energy Security:</strong> Computational cost deters malicious actors</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 7: Security Threats -->
+        <div class="slide" data-slide="7">
+            <div class="slide-content">
+                <h1 class="slide-title">Common Security Threats</h1>
+                <ul class="content-list">
+                    <li class="bullet-point"><strong>51% Attack:</strong> Control majority of network to manipulate blockchain</li>
+                    <li class="bullet-point"><strong>Sybil Attack:</strong> Create multiple fake identities to gain influence</li>
+                    <li class="bullet-point"><strong>Smart Contract Bugs:</strong> Code vulnerabilities leading to fund loss</li>
+                    <li class="bullet-point"><strong>Phishing Attacks:</strong> Social engineering to steal private keys</li>
+                    <li class="bullet-point"><strong>Routing Attacks:</strong> Intercept network traffic between nodes</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 8: Double Spending -->
+        <div class="slide" data-slide="8">
+            <div class="slide-content">
+                <h1 class="slide-title">Double Spending Prevention</h1>
+                <ul class="content-list">
+                    <li class="bullet-point"><strong>Timestamp Verification:</strong> Chronological ordering of transactions</li>
+                    <li class="bullet-point"><strong>Consensus Validation:</strong> Network agreement on transaction validity</li>
+                    <li class="bullet-point"><strong>UTXO Model:</strong> Each output can only be spent once</li>
+                    <li class="bullet-point"><strong>Multiple Confirmations:</strong> Wait for several blocks for security</li>
+                    <li class="bullet-point"><strong>Network Monitoring:</strong> Real-time detection of conflicting transactions</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 9: Privacy Protection -->
+        <div class="slide" data-slide="9">
+            <div class="slide-content">
+                <h1 class="slide-title">Privacy Protection Methods</h1>
+                <ul class="content-list">
+                    <li class="bullet-point"><strong>Zero-Knowledge Proofs:</strong> Verify transactions without revealing details</li>
+                    <li class="bullet-point"><strong>Ring Signatures:</strong> Hide sender among group of possible signers</li>
+                    <li class="bullet-point"><strong>Cryptocurrency Mixers:</strong> Obscure transaction paths and amounts</li>
+                    <li class="bullet-point"><strong>Pseudonymity:</strong> Addresses don't directly reveal user identity</li>
+                    <li class="bullet-point"><strong>Selective Disclosure:</strong> Share only necessary transaction details</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 10: Conclusion -->
+        <div class="slide" data-slide="10">
+            <div class="slide-content">
+                <h1 class="slide-title">Conclusion & Best Practices</h1>
+                <ul class="content-list">
+                    <li class="bullet-point"><strong>Multi-layered Security:</strong> Combine cryptography, consensus, and monitoring</li>
+                    <li class="bullet-point"><strong>Regular Audits:</strong> Continuously assess and improve security measures</li>
+                    <li class="bullet-point"><strong>User Education:</strong> Understand private key management and wallet security</li>
+                    <li class="bullet-point"><strong>Network Participation:</strong> Larger networks provide better security</li>
+                    <li class="bullet-point"><strong>Stay Updated:</strong> Follow security developments and best practices</li>
+                </ul>
+                <div class="key-takeaway">
+                    <p><strong>Key Takeaway:</strong> Blockchain security relies on mathematical cryptography, economic incentives, and distributed consensus to create trustless systems</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="navigation">
+            <button id="prev-btn" class="nav-btn" disabled>← Previous</button>
+            <button id="next-btn" class="nav-btn">Next →</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
